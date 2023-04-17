@@ -2,8 +2,9 @@
 
 namespace armory;
 
-include_once __DIR__.'/../../itemBufBase.php';
-abstract class midArmour extends \itemBufBase
+
+include_once "./classes/items/armory/armoryBase.php";
+abstract class midArmour extends armoryBase
 {
 
 }
