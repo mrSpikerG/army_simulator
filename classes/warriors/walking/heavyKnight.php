@@ -11,15 +11,7 @@ class heavyKnight extends \warriorBase
         if($weaponSide!=null) {
             array_push($itemArray, $weaponSide);
         }
-        parent::__construct(100, 40, 40, 30,$itemArray);
-    }
-    public function recieveDamage($damage)
-    {
-        // TODO: Implement recieveDamage() method.
+        parent::__construct(100, 50, 40, 30,$itemArray);
     }
 
-    public function giveDamage($damage)
-    {
-        // TODO: Implement giveDamage() method.
-    }
 }?>

@@ -14,14 +14,6 @@ class horseman extends  warriorBase
         parent::__construct(100, 40, 40, 30,$itemArray);
     }
 
-    public function recieveDamage($damage)
-    {
-        // TODO: Implement recieveDamage() method.
-    }
 
-    public function giveDamage($damage)
-    {
-        // TODO: Implement giveDamage() method.
-    }
 }
 ?>

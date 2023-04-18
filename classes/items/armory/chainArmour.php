@@ -7,7 +7,7 @@ class chainArmour extends  midArmour
 
     public function __construct()
     {
-        parent::__construct(0, -30, 0, 50);
+        parent::__construct(0, -20, 0, 50);
     }
 }
 

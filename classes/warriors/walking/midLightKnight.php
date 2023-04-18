@@ -15,13 +15,5 @@ class midLightKnight extends  lightKnight
         parent::__construct(100, 100, 30, 30,$itemArray);
     }
 
-    public function recieveDamage($damage)
-    {
-        // TODO: Implement recieveDamage() method.
-    }
 
-    public function giveDamage($damage)
-    {
-        // TODO: Implement giveDamage() method.
-    }
 }?>
