@@ -2,6 +2,7 @@
 
 namespace squad;
 
+use http\Params;
 use ultimates\inspiration;
 use ultimates\Rage;
 use ultimates\warShout;
@@ -85,10 +86,18 @@ class squad
         return $this->squad;
     }
 
-    public function attackSquad($squad)
+    public function attackSquad($squad, $field)
     {
 
+        // add field debuf every attack iteration because every minute on the rainy field more mud, on the snowy more snow etc
+        foreach ($squad->getSquad() as $unit){
 
+            $unit->addBuf(array($field));
+        }
+
+        foreach ($this->getSquad() as $unit){
+            $unit->addBuf(array($field));
+        }
 
         $friends = count($this->squad);
         $enemy = count($squad->getSquad());

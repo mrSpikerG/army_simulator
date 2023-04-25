@@ -37,6 +37,7 @@ abstract class warriorBase
     }
 
     public function addBuf($bufs){
+
         foreach ($bufs as $item){
             if($item->getAttr()==="hp"){
                 $this->hp = $this->hp*$item->getBuf();

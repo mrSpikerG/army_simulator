@@ -1,6 +1,8 @@
 <?php
 
 use squad\squad;
+use ultimates\fields\rainy;
+use ultimates\fields\sunny;
 use ultimates\fractions\barbarians;
 use ultimates\fractions\romans;
 use walking\heavyKnight;
@@ -14,6 +16,8 @@ include_once './classes/items/weapon/bow.php';
 include_once './classes/items/weapon/sword.php';
 include_once './classes/achievments/fractions/romans.php';
 include_once './classes/achievments/fractions/barbarians.php';
+include_once './classes/achievments/fields/rainy.php';
+include_once './classes/achievments/fields/sunny.php';
 
 
 
@@ -41,7 +45,7 @@ $squad2 = new squad(new barbarians(),array(
 ));
 
 
-while ($squad2->attackSquad($squad1)!=true){
+while ($squad2->attackSquad($squad1,new rainy())!=true){
 
 }
 
@@ -55,9 +59,6 @@ if($squad1->getSquad()==="squad is too small"){
         echo $unit."<br><br>";
     }
 }
-
-
-
 
 
 ?>
